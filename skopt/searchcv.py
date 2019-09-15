@@ -1,4 +1,8 @@
-from collections import defaultdict, Sized
+try:
+    from collections.abc import defaultdict, Sized
+except ImportError:
+    from collections import defaultdict, Sized
+
 from functools import partial
 
 import logging
